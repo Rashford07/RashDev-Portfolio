@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.body-content {
+  width: 100%;
+  /* padding: 0 7rem; */
+  color: whitesmoke;
+  background-color: rgba(30, 32, 44, 0.87);
+  /* background-image: url("https://images.unsplash.com/photo-1681673211051-dc2534444d0d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* background-color: rgba(30, 32, 44, 0.27); */
+}

@@ -1,0 +1,48 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Poppins, sans-serif;
+  height: 90px;
+  justify-content: space-between;
+  border-radius: 5px;
+  position: sticky;
+  padding: 0 7rem;
+  /* background-color: rgba(30, 32, 44, 0.87); */
+}
+header nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul a {
+  color: rgb(163, 160, 160);
+  font-size: 18px;
+}
+header nav ul a:active {
+  color: white;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.logo img {
+  width: 35px;
+  height: 35px;
+}
+.logo h4 {
+  color: white;
+  font-size: 25px;
+}
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.contacts a {
+  color: white;
+  font-size: 27px;
+}

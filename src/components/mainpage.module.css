@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.first_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem 12rem 0;
+  width: 100%;
+  padding: 0 7rem;
+
+  /* background-color: rgba(30, 32, 44, 0.87); */
+  /* background-color: #1e202ce6; */
+}
+.left {
+  width: 50%;
+}
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main_image {
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+}
+.details > h1 {
+  font-size: 60px;
+}
+.details > h1::first-letter {
+  font-size: 100px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.details > h2 {
+  font-size: 30px;
+  font-style: italic;
+}
+
+.details > h1::after {
+  content: "";
+  width: 70%;
+  height: 5px;
+  background-color: rgb(214, 93, 23);
+  display: block;
+  margin-top: -15px;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+.blur {
+  color: rgba(231, 235, 240, 0.781);
+}
+.resume {
+  margin-top: 15px;
+  color: rgb(214, 93, 23);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 20px;
+}
+.socials > a {
+  color: rgb(214, 93, 23);
+  background-color: rgba(248, 247, 247, 0.151);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 7px;
+  border-radius: 100%;
+  font-size: 20px;
+}
+
+/* second section */
+.second_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 7rem;
+  position: relative;
+  /* bottom: -90px */
+}
+.wrapper {
+  background-color: #404650;
+  width: 75%;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: absolute;
+}
+.wrapper > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #19182566;
+  padding: 1rem 2rem;
+  margin: 10px 0;
+}
+.wrapper > div > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper > div > span > * {
+  width: 30px;
+  height: 30px;
+  margin-right: 7px;
+  text-align: center;
+}
+.react {
+  color: #24b4fb;
+}
+.js {
+  color: rgb(255, 200, 0);
+}
+.html {
+  color: rgb(214, 93, 23);
+}
+.css {
+  color: rgba(16, 16, 224, 0.877);
+}
+.tailwind {
+  color: rgb(36, 117, 122);
+}
+.redux {
+  color: rgb(214, 93, 23);
+}
+.bootstrap {
+  color: rgb(150, 8, 150);
+}
+.git {
+  color: rgb(214, 93, 23);
+}
+
+/* Third section */
+.third_section {
+  padding: 12rem 7rem 3rem 7rem;
+  background-color: #1e202ce6;
+}
+.third_section > h1 {
+  font-size: 30px;
+}
+.third_section > div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
