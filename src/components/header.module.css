@@ -45,4 +45,10 @@ header nav ul a:active {
 .contacts a {
   color: white;
   font-size: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 950px) {
 }

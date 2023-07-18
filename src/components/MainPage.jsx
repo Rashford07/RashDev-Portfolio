@@ -137,13 +137,13 @@ const ThirdSection = () => {
 
 const ContactMe = () => {
   return (
-    <section>
-      <div>
-        <h1>Get in touch</h1>
+    <section className={styles.contact_section}>
+      <div className={styles.contact_section_header}>
+        <h3>Get in touch</h3>
         <p>Just a direct message away</p>
       </div>
 
-      <div>
+      <div className={styles.contact_section_body}>
         <a href="" target="_blank">
           {<FaWhatsapp />}
         </a>

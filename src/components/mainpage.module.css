@@ -149,3 +149,29 @@
   gap: 2rem;
   margin: 3rem 0;
 }
+
+/* Contact section */
+.contact_section {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  /* background-color: red; */
+}
+
+.contact_section_header h3 {
+  font-size: 30px;
+  font-style: italic;
+}
+.contact_section_header h3::first-letter {
+  font-size: 50px;
+  font-style: normal;
+}
+.contact_section_header p {
+  /* font-size: 30px; */
+  font-weight: 100;
+  font-style: italic;
+}
+.contact_section_body a {
+  color: rgb(214, 93, 23);
+  font-size: 20px;
+}

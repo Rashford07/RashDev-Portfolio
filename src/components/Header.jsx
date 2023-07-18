@@ -7,6 +7,11 @@ import {
 } from "react-icons/ai";
 import { IconContext } from "react-icons";
 function Header(props) {
+  const mouseOverHandler = (e) => {
+    console.log(e.target);
+    e.target.style.color = "red";
+  };
+
   return (
     <header>
       <div className={classes.logo}>
@@ -16,7 +21,9 @@ function Header(props) {
       <nav>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="#" onMouseOver={mouseOverHandler}>
+              Home
+            </a>
           </li>
           <li>
             <a onClick={props.scroll}>Projects</a>
