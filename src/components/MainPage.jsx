@@ -28,12 +28,9 @@ const FirstSection = () => {
           <h2 className={styles.blur}>Developer :</h2>
           <h1>Rasheed Adekunle</h1>
           <p className={styles.blur}>
-            {" "}
-            A frontend developer with experience in building modern,responsive
-            web applications using react. I am proficient in using React
-            hooks,libraries and functional components to build scalable and
-            maintainable user interface. Lets build high-quality, iser-friendly
-            products together
+            {
+              " A frontend developer with experience in building modern,responsive web applications using react. I am proficient in using React hooks,libraries and functional components to build scalable and maintainable user interface. Lets build high-quality, user-friendly products together"
+            }
           </p>
 
           <a
@@ -155,7 +152,6 @@ const ContactMe = () => {
   );
 };
 function MainPage(props) {
-  props.scroll(ThirdSection);
   return (
     <main>
       {/* First section */}

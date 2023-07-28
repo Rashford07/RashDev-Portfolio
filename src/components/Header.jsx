@@ -1,17 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./header.module.css";
 import {
   AiOutlineMail,
   AiOutlineLinkedin,
   AiOutlineGithub,
 } from "react-icons/ai";
-import { IconContext } from "react-icons";
-function Header(props) {
-  const mouseOverHandler = (e) => {
-    console.log(e.target);
-    e.target.style.color = "red";
-  };
 
+function Header(props) {
+  const [toggle, setToggle] = useState(false);
+
+  const toggleHandler = () => {
+    setToggle((prev) => !prev);
+  };
   return (
     <header>
       <div className={classes.logo}>
@@ -21,12 +21,10 @@ function Header(props) {
       <nav>
         <ul>
           <li>
-            <a href="#" onMouseOver={mouseOverHandler}>
-              Home
-            </a>
+            <a href="#">Home</a>
           </li>
           <li>
-            <a onClick={props.scroll}>Projects</a>
+            <a href="#">Projects</a>
           </li>
           <li>
             <a href="#">Contact Me</a>
@@ -43,6 +41,18 @@ function Header(props) {
         <a href="https://github.com/Rashford07" target="_blank">
           <AiOutlineGithub />
         </a>
+      </div>
+      <div
+        className={
+          !toggle
+            ? classes.toggle_btn
+            : classes.toggle_btn + " " + classes.active
+        }
+        onClick={toggleHandler}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </header>
   );

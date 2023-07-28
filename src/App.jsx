@@ -4,13 +4,11 @@ import Header from "./components/Header";
 import MainPage from "./components/MainPage";
 
 function App() {
-  const scroll = (sect) => {
-    // sect.scrollIntoView(true);
-  };
+  const scroll = (sect) => {};
   return (
     <section className="body-content">
       <Header />
-      <MainPage scroll={scroll} />
+      <MainPage />
       <Footer />
     </section>
   );

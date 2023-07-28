@@ -8,7 +8,6 @@ header {
   border-radius: 5px;
   position: sticky;
   padding: 0 7rem;
-  /* background-color: rgba(30, 32, 44, 0.87); */
 }
 header nav ul {
   display: flex;
@@ -20,6 +19,9 @@ header nav ul a {
   font-size: 18px;
 }
 header nav ul a:active {
+  color: white;
+}
+header nav ul a:hover {
   color: white;
 }
 .logo {
@@ -50,5 +52,42 @@ header nav ul a:active {
   align-items: center;
   flex-direction: column;
 }
-@media (max-width: 950px) {
+.toggle_btn {
+  display: none;
+}
+.toggle_btn span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.toggle_btn.active span {
+  transition: all 0.3s ease-in-out;
+}
+.toggle_btn.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.toggle_btn.active span:nth-child(2) {
+  opacity: 0;
+}
+.toggle_btn.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 970px) {
+  header {
+    padding: 0 2rem;
+  }
+  nav {
+    display: none;
+  }
+  .contacts {
+    display: none;
+  }
+  .toggle_btn {
+    display: block;
+    cursor: pointer;
+  }
 }
