@@ -13,14 +13,16 @@ header nav ul {
   display: flex;
   gap: 20px;
 }
+header nav ul li {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
 
 header nav ul a {
-  color: rgb(163, 160, 160);
+  color: white;
   font-size: 18px;
 }
-header nav ul a:active {
-  color: white;
-}
+
 header nav ul a:hover {
   color: white;
 }

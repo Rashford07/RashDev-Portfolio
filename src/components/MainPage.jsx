@@ -116,7 +116,7 @@ const SecondSection = () => {
 };
 const ThirdSection = () => {
   return (
-    <section className={styles.third_section}>
+    <section className={styles.third_section} id="projects">
       <h1>My projects</h1>
       <div>
         {Data.map((proj) => (
@@ -134,7 +134,7 @@ const ThirdSection = () => {
 
 const ContactMe = () => {
   return (
-    <section className={styles.contact_section}>
+    <section className={styles.contact_section} id="contact-me">
       <div className={styles.contact_section_header}>
         <h3>Get in touch</h3>
         <p>Just a direct message away</p>

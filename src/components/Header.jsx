@@ -5,6 +5,7 @@ import {
   AiOutlineLinkedin,
   AiOutlineGithub,
 } from "react-icons/ai";
+import ScrollIntoView from "react-scroll-into-view";
 
 function Header(props) {
   const [toggle, setToggle] = useState(false);
@@ -21,13 +22,19 @@ function Header(props) {
       <nav>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <ScrollIntoView selector="#home">
+              <a>Home</a>
+            </ScrollIntoView>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <ScrollIntoView selector="#projects">
+              <a>Projects</a>
+            </ScrollIntoView>
           </li>
           <li>
-            <a href="#">Contact Me</a>
+            <ScrollIntoView selector="#contact-me">
+              <a>Contact Me</a>
+            </ScrollIntoView>
           </li>
         </ul>
       </nav>
