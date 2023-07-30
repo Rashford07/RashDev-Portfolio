@@ -13,18 +13,17 @@ function Header(props) {
   const toggleHandler = () => {
     setToggle((prev) => !prev);
   };
+  props.onToggle(toggle);
   return (
-    <header>
+    <header className={toggle ? classes.active : ""}>
       <div className={classes.logo}>
         <img src="https://img.icons8.com/cotton/64/null/slightly-smiling-face-icon.png" />{" "}
         <h4>BigRashDev</h4>
       </div>
-      <nav>
+      <nav className={toggle ? classes.active : ""}>
         <ul>
           <li>
-            <ScrollIntoView selector="#home">
-              <a>Home</a>
-            </ScrollIntoView>
+            <a>Home</a>
           </li>
           <li>
             <ScrollIntoView selector="#projects">

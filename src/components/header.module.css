@@ -5,7 +5,7 @@ header {
   font-family: Poppins, sans-serif;
   height: 90px;
   justify-content: space-between;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   position: sticky;
   padding: 0 7rem;
 }
@@ -82,14 +82,47 @@ header nav ul a:hover {
   header {
     padding: 0 2rem;
   }
-  nav {
-    display: none;
-  }
   .contacts {
     display: none;
   }
   .toggle_btn {
     display: block;
     cursor: pointer;
+  }
+  nav {
+    position: fixed;
+    right: -100%;
+    top: 88px;
+    bottom: 0px;
+    flex-direction: column;
+    width: 100%;
+    transition: 0.3s;
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;
+    background-color: rgba(30, 32, 44, 0.87);
+    gap: 0;
+  }
+  nav ul a {
+    color: white;
+  }
+  nav ul li {
+    margin: 15px auto;
+  }
+  nav.active {
+    right: 0;
+  }
+
+  header.active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(30, 32, 44, 0.87);
+  }
+  header {
+    width: 100%;
+    padding: 0 25px;
   }
 }

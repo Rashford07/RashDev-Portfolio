@@ -59,7 +59,7 @@
   gap: 7px;
   font-size: 20px;
 }
-@media (max-width: 970px) {
+@media screen and (max-width: 970px) {
   .first_section {
     flex-direction: column-reverse;
     justify-content: center;
@@ -67,6 +67,7 @@
   }
   .details h1 {
     font-size: 50px;
+    /* font-size: 300%; */
   }
   .left {
     width: 100%;
@@ -98,8 +99,14 @@
     gap: 7px;
     font-size: 20px;
   }
+  .first_section.active {
+    margin-top: 300px;
+    padding-top: 30px;
+    /* transition: 7s ease-in-out; */
+    transition-delay: 3s;
+  }
 }
-@media (max-width: 755px) {
+@media screen and (max-width: 755px) {
   .first_section {
     padding: 0 3rem;
   }
@@ -116,11 +123,24 @@
     width: 100%;
   }
 }
-@media (max-width: 566px) {
+@media screen and (max-width: 566px) {
   .first_section {
     padding-bottom: 2rem;
   }
 }
+@media screen and (max-width: 522px) {
+  .details > h1 {
+    font-size: 30px;
+  }
+  .details > h1::after {
+    margin-top: -10px;
+    width: 20rem;
+  }
+  .details > h1::first-letter {
+    font-size: 60px;
+  }
+}
+
 /* second section */
 .second_section {
   display: flex;
@@ -182,7 +202,7 @@
 .git {
   color: rgb(214, 93, 23);
 }
-@media (max-width: 835px) {
+@media screen and (max-width: 835px) {
   .second_section {
     flex-direction: column;
     justify-content: center;
@@ -208,11 +228,9 @@
   gap: 2rem;
   margin: 3rem 0;
 }
-@media (max-width: 970px) {
+@media screen and (max-width: 970px) {
   .third_section {
     padding: 12rem 2rem 3rem 2rem;
-  }
-  .third_section > h1 {
   }
   .third_section > div {
     flex-direction: column;
@@ -223,7 +241,7 @@
     max-height: 600px;
   }
 }
-@media (max-width: 566px) {
+@media screen and (max-width: 566px) {
   .third_section {
     margin-top: 2rem;
   }
