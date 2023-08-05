@@ -148,10 +148,10 @@ function MainPage(props) {
         </div>
 
         <div className={styles.contact_section_body}>
-          <a href="" target="_blank">
+          <a href="https://wa.me/2348085792829" target="_blank">
             {<FaWhatsapp />}
           </a>
-          <a href="" target="_blank">
+          <a href="tel:+2348085792829" target="_blank">
             {<BsTelephoneForwardFill />}
           </a>
         </div>

@@ -166,8 +166,12 @@
   gap: 2rem;
 }
 .contact_section_body a {
-  color: rgb(37 211 102);
-  font-size: 40px;
+  color: rgba(214, 163, 23, 0.849);
+  font-size: 50px;
+}
+.contact_section_body a:nth-child(2) {
+  font-size: 45px;
+  font-weight: lighter;
 }
 
 /* RESPONSIVENESS */
@@ -214,7 +218,7 @@
   .first_section.active {
     padding-top: 30px;
     margin-top: 300px;
-    transition: margin 8000ms ease-in-out;
+    transition: all 3s ease-in-out;
     transition-delay: 3s;
   }
 
@@ -225,7 +229,7 @@
     flex-direction: column;
   }
   .third_section > div > div {
-    width: 80%;
+    width: 9 0%;
     height: auto;
     max-height: 600px;
   }

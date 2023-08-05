@@ -14,8 +14,13 @@ function Header(props) {
     setToggle((prev) => !prev);
   };
   props.onToggle(toggle);
+
+  const scrollLinkHandler = () => {
+    setToggle(false);
+  };
+
   return (
-    <header className={toggle ? classes.active : ""}>
+    <header className={toggle ? classes.active : ""} id="home-header">
       <div className={classes.logo}>
         <img src="https://img.icons8.com/cotton/64/null/slightly-smiling-face-icon.png" />{" "}
         <h4>BigRashDev</h4>
@@ -23,15 +28,17 @@ function Header(props) {
       <nav className={toggle ? classes.active : ""}>
         <ul>
           <li>
-            <a>Home</a>
+            <ScrollIntoView selector="#home-header" onClick={scrollLinkHandler}>
+              <a>Home</a>
+            </ScrollIntoView>
           </li>
           <li>
-            <ScrollIntoView selector="#projects">
+            <ScrollIntoView selector="#projects" onClick={scrollLinkHandler}>
               <a>Projects</a>
             </ScrollIntoView>
           </li>
           <li>
-            <ScrollIntoView selector="#contact-me">
+            <ScrollIntoView selector="#contact-me" onClick={scrollLinkHandler}>
               <a>Contact Me</a>
             </ScrollIntoView>
           </li>
