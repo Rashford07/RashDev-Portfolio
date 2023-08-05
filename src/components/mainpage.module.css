@@ -28,7 +28,7 @@
   border-radius: 100%;
 }
 .details > h1 {
-  font-size: 60px;
+  font-size: 3rem;
 }
 .details > h1::first-letter {
   font-size: 100px;
@@ -175,6 +175,22 @@
 }
 
 /* RESPONSIVENESS */
+@media screen and (max-width: 1230px) {
+  .details > h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 1088px) {
+  .details > h1::after {
+    content: "";
+    width: 12rem;
+    height: 5px;
+    background-color: rgb(214, 93, 23);
+    display: block;
+    margin: -7px 0 16px 0;
+    border-radius: 6px;
+  }
+}
 @media screen and (max-width: 970px) {
   .first_section {
     flex-direction: column-reverse;
@@ -199,7 +215,7 @@
   }
   .details > h1::after {
     content: "";
-    width: 90%;
+    width: 75%;
     height: 5px;
     background-color: rgb(214, 93, 23);
     display: block;
@@ -229,7 +245,7 @@
     flex-direction: column;
   }
   .third_section > div > div {
-    width: 9 0%;
+    width: 90%;
     height: auto;
     max-height: 600px;
   }
@@ -240,6 +256,9 @@
     padding: 2rem 2rem;
     height: auto;
   }
+  .details > h1::after {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 755px) {
   .first_section {
@@ -249,7 +268,7 @@
     font-size: 40px;
   }
   .details > h1::after {
-    width: 26rem;
+    max-width: 26rem;
   }
   .details > h1::first-letter {
     font-size: 80px;
@@ -319,7 +338,4 @@
   .details > h1::first-letter {
     font-size: 50px;
   }
-}
-
-@media screen and (max-width: 398px) {
 }
