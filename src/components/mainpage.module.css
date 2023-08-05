@@ -234,8 +234,7 @@
   .first_section.active {
     padding-top: 30px;
     margin-top: 300px;
-    transition: all 3s ease-in-out;
-    transition-delay: 3s;
+    transition: all 0.3s ease-in-out;
   }
 
   .third_section {
